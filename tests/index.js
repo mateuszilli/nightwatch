@@ -1,14 +1,16 @@
+var environment = require('../environment.json');
+
 module.exports = {
   'Primeiro passo' : function (browser) {
     browser
       .url('https://github.com/login')
-      .waitForElementVisible('body', 5000);
+      .pause(5000);
   },
   'Segundo passo' : function (browser) {
     browser
-      .setValue('input[type=text]', 'mateus_zillip@hotmail.com')
+      .setValue('input[type=text]', environment.username)
       .pause(250)
-      .setValue('input[type=password]', 'Mateus@1999')
+      .setValue('input[type=password]', environment.password)
       .pause(250)
       .click('input[type=submit]')
       .pause(5000);

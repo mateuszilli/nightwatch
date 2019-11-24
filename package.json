@@ -1,0 +1,16 @@
+{
+  "name": "nighwatch",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "start": "nightwatch"
+  },
+  "dependencies": {
+    "nightwatch": "^1.3.0"
+  },
+  "devDependencies": {
+    "chromedriver": "^78.0.1",
+    "selenium-server": "^3.141.59"
+  }
+}

@@ -11,5 +11,4 @@ Run the commands:
 yarn
 
 yarn start
-
 ```
